@@ -27,3 +27,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//rutas cargos
+
+Route::post('api/cargos/guardar', 'CargosController@store');
+Route::put('api/cargos/actualizar', 'CargosController@update');
+Route::delete('api/cargos/eliminar', 'CargosController@delete');
